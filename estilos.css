@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +9,10 @@
 :root {
   --color_primario: #f6e231;
   --color_secundario: #2a2929;
+  --color_blanco: #c2c2c2;
   --tamanio_fuente: 18px;
   --maximo_ancho: 1200px;
+  --alto_nav: 70px;
 }
 
 ::selection {
@@ -16,13 +20,26 @@
   color: var(--color_secundario);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: var(--tamanio_fuente);
+  background-color: var(--color_secundario);
+  color: var(--color_blanco);
 }
 
 header {
   background-color: var(--color_primario);
   color: var(--color_secundario);
+  font-family: "Faculty Glyphic", sans-serif;
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+
+section {
 }
 
 .contenedor {
@@ -32,8 +49,13 @@ header {
   overflow: hidden;
 }
 
+.h-100 {
+  height: calc(100vh - var(--alto_nav));
+}
+
 .nav {
-  height: 70px;
+  /*
+  height: 70px;*/
 }
 
 .nav__contenedor {
@@ -43,8 +65,11 @@ header {
 }
 
 .nav__lista {
+  height: var(--alto_nav);
   list-style: none;
   display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .logo {
@@ -56,4 +81,105 @@ header {
   text-decoration: none;
   color: var(--color_secundario);
   font-weight: bold;
+}
+
+.logo1 {
+  height: 500px;
+  width: 500px;
+}
+
+/*------------- Principal*-------------*/
+
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo1 {
+  order: 1;
+  flex-basis: 40%;
+}
+
+.contenedor-textos {
+  order: 0;
+  flex-basis: 50%;
+}
+
+.titulo {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.parrafo {
+  margin: 20px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 16px 30px;
+  border-radius: 30px;
+}
+
+.btn--negro {
+  background-color: var(--color_secundario);
+  color: var(--color_blanco);
+}
+
+.logo2 {
+  height: 500px;
+  width: 500px;
+}
+
+/*------------Servicios---------*/
+
+.text-center {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card__item {
+  max-width: 350px;
+  width: 30%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0, 5);
+  text-align: center;
+  background-color: var(--color_blanco);
+  color: var(--color_secundario);
+  padding: 40px 0;
+  border-radius: 10px;
+}
+
+.card__plan {
+  margin-bottom: 20px;
+}
+
+.card__precio {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.card__caracteristica {
+  margin-bottom: 25px;
+}
+
+.card__item--activo {
+  background-color: var(--color_primario);
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
