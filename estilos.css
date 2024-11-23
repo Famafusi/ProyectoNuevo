@@ -12,7 +12,7 @@
   --color_blanco: #c2c2c2;
   --tamanio_fuente: 18px;
   --maximo_ancho: 1200px;
-  --alto_nav: 70px;
+  --alto_nav: 40px;
 }
 
 ::selection {
@@ -21,7 +21,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth ;
+  scroll-padding-top: var(--alto_nav); /* Ajustar el desplazamiento de scroll */
 }
 
 body {
@@ -40,6 +41,9 @@ header {
 }
 
 section {
+  padding: 20px 0; /* Reducir el padding superior e inferior */
+  margin-bottom: 40px;
+  scroll-margin-top: var(--alto_nav);  /* Ajustar el margen de desplazamiento */
 }
 
 .contenedor {
@@ -54,8 +58,6 @@ section {
 }
 
 .nav {
-  /*
-  height: 70px;*/
 }
 
 .nav__contenedor {
@@ -120,7 +122,7 @@ section {
 .btn {
   display: inline-block;
   background-color: var(--color_primario);
-  color: var(--color_secundario);
+  color: var (--color_secundario);
   text-decoration: none;
   font-weight: 700;
   padding: 16px 30px;
@@ -182,4 +184,75 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/*------------Galería y Contacto---------*/
+
+.galeria-section, .contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;  /* Centra el contenido verticalmente */
+  padding: 20px 0;  /* Reducir el padding superior e inferior */
+}
+
+.galeria__fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;  /* Centrado */
+}
+
+.galeria__foto {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;  /* Reducir el padding */
+  background-color: var(--color_secundario);
+  color: var(--color_blanco);
+  border-radius: 10px;
+  max-width: 400px;  /* Reducción del ancho del formulario */
+  width: 100%;
+  margin: 0 auto;  /* Centrado */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--color_secundario);
+  border-radius: 5px;
+  background-color: var(--color_blanco);
+  color: var(--color_secundario);
+}
+
+.formulario .btn {
+  display: inline-block;
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 16px 30px;
+  border-radius: 30px;
+  align-self: center;
 }

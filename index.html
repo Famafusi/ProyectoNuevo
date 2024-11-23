@@ -129,50 +129,64 @@
           </div>
         </div>
       </section>
-      <section id="galeria">
-        <div class="contenedor principal h-100">
-          <img src="cat.jpg" alt="logo1" class="logo1" />
-          <div class="contenedor-textos">
-            <h1 class="titulo">Diseño Web</h1>
-            <p class="parrafo">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-              fuga, architecto voluptatibus magni repellendus iste corporis
-              tempore amet non quaerat, sapiente rem eaque! Dolor ducimus magni
-              expedita corrupti saepe commodi!
-            </p>
-            <p class="parrafo">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
-              consequatur dignissimos, itaque soluta vel explicabo.
-            </p>
-
-            <a href="#" class="btn"> Aprende ahora </a>
+            
+      <section id="galeria" class="h-100">
+        <div class="contenedor">
+          <div class="text-center">
+            <h2 class="titulo">Galería</h2>
+            <p class="parrafo">Disfruta de nuestras fotos destacadas.</p>
+          </div>
+          <div class="galeria__fotos">
+            <img src="img4.jpg" alt="Foto 1" class="galeria__foto" />
+            <img src="img5.jpg" alt="Foto 2" class="galeria__foto" />
+            <img src="img6.jpg" alt="Foto 3" class="galeria__foto" />
+            <img src="img7.jpg" alt="Foto 4" class="galeria__foto" />
+            <img src="img8.jpg" alt="Foto 5" class="galeria__foto" />
+            <img src="img9.jpg" alt="Foto 6" class="galeria__foto" />
           </div>
         </div>
       </section>
-
-      <section id="contacto">
-        <div class="contenedor principal h-100">
-          <img src="paseo.jpg" alt="nosotros" class="logo2" />
-          <div class="contenedor-textos">
-            <h2 class="titulo">Diseño Web2</h2>
+      
+      <section id="contacto" class="h-100">
+        <div class="contenedor">
+          <div class="text-center">
+            <h2 class="titulo">Contacto</h2>
             <p class="parrafo">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae, consequatur. Soluta, iste praesentium cupiditate sit
-              assumenda obcaecati alias excepturi voluptatibus, et reprehenderit
-              fugiat exercitationem eveniet ducimus quibusdam ipsa amet
-              repellendus!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, nesciunt
+              accusamus accusantium ipsum provident, eius, obcaecati id velit tempora
+              soluta qui iusto tenetur magnam facere? Amet quisquam alias blanditiis
+              eligendi.
             </p>
-            <p class="parrafo">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              ipsa, optio doloribus sunt distinctio deserunt. Fugit, nesciunt
-              quisquam nostrum ratione a numquam voluptatibus architecto cum
-              asperiores eius consequatur voluptatem ducimus.
-            </p>
-
-            <a href="#" class="btn"> Aprende ahora </a>
           </div>
+          <form class="formulario">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" id="apellidos" name="apellidos" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar datos</button>
+          </form>
         </div>
       </section>
+      
+        
     </main>
   </body>
 </html>
+
+
